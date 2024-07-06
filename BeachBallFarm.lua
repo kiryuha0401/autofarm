@@ -53,7 +53,7 @@ UIGradient_2.Parent = Warning
 
 -- Scripts:
 
-local function ZQMA_fake_script() -- FarmGui.LocalScript 
+local function ALFS_fake_script() -- FarmGui.LocalScript 
 	local script = Instance.new('LocalScript', FarmGui)
 
 	local function sendNotification(title, text, duration)
@@ -66,7 +66,7 @@ local function ZQMA_fake_script() -- FarmGui.LocalScript
 	
 	
 	sendNotification("Successfully!", "Auto Farm Enabled!", 5)
-	while wait(2) do
+	while wait(1) do
 		if game.Workspace:WaitForChild("Normal"):WaitForChild("CoinContainer"):WaitForChild("Coin_Server").CoinVisual.BrickColor == BrickColor.new("Bright yellow") then
 			game.Workspace:WaitForChild("Normal"):WaitForChild("CoinContainer"):WaitForChild("Coin_Server"):Destroy()
 		else
@@ -79,8 +79,8 @@ local function ZQMA_fake_script() -- FarmGui.LocalScript
 	end
 	
 end
-coroutine.wrap(ZQMA_fake_script)()
-local function ISGQG_fake_script() -- FarmGui.LocalScript 
+coroutine.wrap(ALFS_fake_script)()
+local function WOTMXR_fake_script() -- FarmGui.LocalScript 
 	local script = Instance.new('LocalScript', FarmGui)
 
 	while true do wait()
@@ -92,8 +92,8 @@ local function ISGQG_fake_script() -- FarmGui.LocalScript
 		end)
 	end
 end
-coroutine.wrap(ISGQG_fake_script)()
-local function RIARTK_fake_script() -- FarmGui.ReloadScript 
+coroutine.wrap(WOTMXR_fake_script)()
+local function XPWYJ_fake_script() -- FarmGui.ReloadScript 
 	local script = Instance.new('LocalScript', FarmGui)
 
 	wait(30)
@@ -101,4 +101,4 @@ local function RIARTK_fake_script() -- FarmGui.ReloadScript
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/kiryuha0401/autofarm/main/BeachBallFarm.lua", true))()
 	
 end
-coroutine.wrap(RIARTK_fake_script)()
+coroutine.wrap(XPWYJ_fake_script)()
